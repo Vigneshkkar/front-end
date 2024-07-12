@@ -1,0 +1,17 @@
+<div class="mat-elevation-z8">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+            <th scope="col" *ngFor="let col of displayedColumns">{{col}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr  *ngFor="let data of dataSource">
+              <td >{{data.id}}</td>
+              <td >{{data.text}}</td>
+            </tr>
+          </tbody>
+    </table>
+    <div>{{ dateDate| date:'long' }}</div>
+    <div>{{100000 | currency:''}}</div>
+  </div>
